@@ -129,7 +129,7 @@ Qualification: $('#fullNameField').val(), //another way you could write is $('#m
 
 	  
         
-	 <a href="job_details.html?link=`+order.JobId+`" class="btn btn-primary">read more</a>
+	 <a href="jobspost.html?link=`+order.JobId+`" class="btn btn-primary">read more</a>
 	 <a class="nav-item nav-link disabled"></a>
  
   </div>
