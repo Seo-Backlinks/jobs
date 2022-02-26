@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Start Job - find verified jobs</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Lato:400,300,700,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Amoeba - v2.0.0
+  * Template URL: https://bootstrapmade.com/free-one-page-bootstrap-template-amoeba/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  
+  <!--
+  <style>
+h2.ex1 {
+  margin-top: 7%;
+}
+h2.dicstyle {
+  margin-top: 7%;
+}
+
+</style>-->
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+			<script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+
+ <script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+
+	
+	
+	<script src="Js/HrProfileForJob.js">
+</script>
+	
+	
+	
+<style>
+html,
+
+body {
+  margin: 0;
+  background: linear-gradient(45deg, #49a09d, #5f2c82);
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+
+
+.COLW {
+  color:white
+}
+
+hr {
+  border: 0;
+  border-top: 2px solid brown;
+}
+</style>
+	
+	
+	
+	
+	<style >
+	.fa:hover {
+            opacity: 0.9;
+        }
+  .fa-A {
+            background: #007bb5;
+            color: white;
+        }
+  
+        .fa-whatsapp {
+            background: #007bb5;
+            color: white;
+        }
+  
+        .fa-phone {
+            background: #cb2027;
+            color: white;
+        }
+  
+        .fa-envelope {
+            background: #ff5700;
+            color: white;
+        }
+  
+        .fa {
+            padding: 1	0px;
+            font-size: 40px;
+            width: 80px;
+            text-decoration: none;
+            margin: 5px 10px;
+        }
+  
+        h1 {
+            color: green;
+        }
+   
+	
+	</style>
+	
+	
+	<style>
+	
+.bn33 {
+  border: 5em;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  -webkit-transform: translate(0);
+  transform: translate(0);
+  background-image: linear-gradient(45deg, #4568dc, #b06ab3);
+  padding: 0.7em 2em;
+  border-radius: 1px;
+  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.438);
+  -webkit-transition: box-shadow 0.25s;
+  transition: box-shadow 0.25s;
+  color: white;
+}
+
+
+.btn41-43 {
+  padding: 10px 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.btn-42 {
+  border: 2px solid rgb(255, 255, 255);
+  z-index: 1;
+  color: white;
+}
+
+.btn-42:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: rgb(255, 255, 255);
+  transition: all 0.3s ease;
+}
+
+.btn-42:hover {
+  color: rgb(0, 0, 0);
+}
+
+.btn-42:hover:after {
+  top: 0;
+  height: 100%;
+}
+
+.btn-42:active {
+  top: 2px;
+}
+
+</style>
+	
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container">
+
+      <div class="logo float-left">
+        <h1 class="text-light"><a href="index.html"><span>Start Job</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav class="nav-menu float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#header">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li class="drop-down"><a href="">Jobs Category </a>
+            <ul>
+              <li><a href="#">Calling Job</a></li>
+              <li class="drop-down"><a href="#">Calling Job</a>
+                <ul>
+                  <li><a href="#">Calling Job</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+			  <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Drop Down 5</a></li>
+            </ul>
+          </li>
+		  <li><a href="https://forms.gle/g4UPnQSNkGTivJ518">Job Form</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End #header -->
+
+  <!-- ======= Hero Section ======= -->
+  
+  
+  
+  
+  
+  <section id="about" class="about" style="margin-bottom:50px;">
+      <div class="container" style="color:white;">
+
+        <div class="section-title">
+          <h2 style="color:white;">About Us</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2 order-lg-1">
+            <img src="assets/img/about-img.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2">
+		  
+		 <hr class="solid COLW">
+	  
+		  
+		  <table class="table table-borderless COLW">
+  <thead >
+    <tr>
+      <th  scope="col"  >Name</th>
+      <th scope="col">:</th>
+      <th scope="col" class="COLW" id="Title">**********</th>
+     </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="col">Number</th>
+      <th scope="col">:</th>
+      <th scope="col" id="number">**********</th>
+</tr>
+    <tr>
+      <th scope="row">Email</th>
+      <th scope="row">:</th>
+      <th scope="row" id="Email">****@gmail.com</th>
+     </tr>
+  </tbody>
+</table>
+		  
+		  	
+		  
+           
+
+
+
+         <hr class="solid COLW">
+	
+			
+			
+			
+			
+			
+			<div class="card" style="margin-top:25px;">
+  <div class="card-header">
+    <h3 style ="color:black">Contact With</h3>
+  
+  </div>
+  <div class="card-body-sharebtn">
+   <center>
+       
+        <!-- Add font awesome icons -->
+        <a   onclick="functionToExecute()" class="fa fa-whatsapp"></a>
+        <a onclick="functionToDialer()" class="fa fa-phone"></a>
+        <a href="#" class="fa fa-envelope"></a>
+    </center>
+   </div>
+</div>	
+	
+			
+			
+		<div class="card" style="margin-top:25px;">
+  <div class="card-header">
+   <div class="container">
+      <div class="d-flex justify-content-center">
+	  <div class="w3-black w3-center w3-padding-24">
+  <a href="https://play.google.com/store/apps/details?id=com.piratesdroid.startjob" target="_blank"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" style="width:165px;"></a>
+ <a href="https://forms.gle/g4UPnQSNkGTivJ518" target="_blank"><img alt="Get it on Google Play" src="https://www.seekpng.com/png/full/683-6833120_google-forms-png.png" style="width:165px;"></a>
+
+</div>
+	  </div>
+
+	  
+    </div>
+  </div>
+</div>	
+			
+			
+			
+			
+            </div>
+        </div>
+
+      </div>
+  
+
+  </section><!-- #hero -->
+
+  <main id="main">
+
+
+    <!-- ======= Services Section ======= -->
+    <section id="jobData" class="services section-bg" style="background: linear-gradient(45deg, #49a09d, #5f2c82);
+  font-family: sans-serif;
+  ">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      <div class="container" >
+	   <hr class="solid COLW">
+			
+<div class="row">
+
+                    <div class="col-lg-12">
+                        <div class="section-tittle text-center" >
+						
+   					   
+						   
+						   
+	
+		
+
+			   
+						
+						
+			
+						
+						
+			
+					
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+						
+                        </div>
+                    </div>
+					
+					
+					
+					
+					
+			
+	
+                </div>
+
+				
+						
+
+      </div>
+    </section><!-- End Services Section -->
+
+   
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about" style="margin-bottom:50px;">
+      <div class="container" style="color:white;">
+
+        <div class="section-title">
+          <h2 style="color:white;">About Us</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2">
+            <img src="assets/img/about-img.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1">
+            <h3>find nearby best jobs with qualification , skills , work from home .
+this app provides verified job with verified HR's.
+
+
+
+
+</h3>
+            <p class="font-italic">
+             One click to Save Job in your List.
+you can get updates with notification. </p>
+<h5>Top categories on Start Job</h5>
+            <ul>
+              <li><i class="icofont-search-job"></i>Digital Marketing</li>
+              <li><i class="icofont-search-job"></i>HR Jobs</li>
+              <li><i class="icofont-search-job"></i>Telecalling</li>
+			   <li><i class="icofont-search-job"></i>UI/UX designer</li>
+                          <li><i class="icofont-search-job"></i>Business Development and Sales</li>
+                          <li><i class="icofont-search-job"></i>Software developer (Backend/Frontend)</li>
+                          <li><i class="icofont-search-job"></i>Mobile app developer</li>
+                          <li><i class="icofont-search-job"></i>Graphic Designer and Social Media</li>
+            
+            </ul>
+            </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+
+
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="d-flex justify-content-center">
+	  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.piratesdroid.com" title="Pirates Droid" target="_blank" class="w3-hover-opacity">Pirates Droid </a><a>
+  </a><a href="https://play.google.com/store/apps/details?id=com.piratesdroid.startjob"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" style="width:165px;"></a>
+</div>
+	  </div>
+
+	  
+    </div>
+  </footer><!-- End #footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
